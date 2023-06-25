@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  color: greenyellow;
+  background-color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+header {
+  margin: 15px;
+  background-color: black;
+  color: greenyellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 2px solid greenyellow;
+  border-bottom: 2px solid greenyellow;
+  border-radius: 12px;
+}
+a {
+  margin: 10px;
+  color: greenyellow;
+  text-decoration: none;
+}
+a:active {
+  text-decoration: underline;
+}
+input {
+  width: 20rem;
+  height: 2rem;
+  background-color: black;
+  border: 2px solid greenyellow;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 2px greenyellow;
+  margin: 15px;
+  color: greenyellow;
+}
+input:focus {
+  background-color: black;
+  color: greenyellow;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px black inset;
+  -webkit-text-fill-color: greenyellow;
+}
+.authForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid greenyellow;
+  border-radius: 8px;
+  box-shadow: 0 0 2px 2px greenyellow;
+  margin: 15px;
+  max-width: 50rem;
+  max-height: 20rem;
+  min-width: 30rem;
+  min-height: 15rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  color: greenyellow;
+  background-color: black;
+  border: 2px solid greenyellow;
+  font-size: x-large;
+  margin: 10px;
+  border-radius: 8px;
+}
+button:hover {
+  background-color: greenyellow;
+  color: black;
+  border: 2px solid black;
+}
+button:disabled {
+  background-color: rgba(173, 255, 47, 0.2);
+  color: rgba(0, 0, 0, 0.2);
+  border: none;
+}
+h2 {
+  color: greenyellow;
+  margin: 0;
+}
+.card {
+  border: 1px solid yellowgreen;
+  height: 20rem;
+  width: 18rem;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+.card:hover {
+  box-shadow: 0 0 5px 5px whitesmoke;
+}
+.expense {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: medium;
+  width: 15rem;
+  border-radius: 0;
+  margin: 4px auto;
+}
+.priceInput {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: xx-large;
+  border-bottom: 1px solid greenyellow;
+  width: 6rem;
+  border-radius: 0;
+  margin: 0 auto;
+}
+.newExpenseForm {
+  display: grid;
+  border: none;
+  box-shadow: none;
+  margin: 10px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  height: 10rem;
+  width: 80%;
+  border-radius: 12px;
+  grid-template-areas:
+    "name amount date"
+    "description description buttons";
+}
+textarea {
+  background-color: black;
+  color: greenyellow;
+  overflow: visible;
+  font-size: large;
+}
+.editButton {
+  position: relative;
+  bottom: 10px;
+}
+.description {
+  height: 8rem;
+}
+.expCards {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+  grid-auto-flow: row;
+}
